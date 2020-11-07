@@ -100,10 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				461350ED255564BC00D65488 /* FirstIOSAppApp.swift */,
-				461350EF255564BC00D65488 /* ContentView.swift */,
+				461351292556FD3200D65488 /* UIEssentials */,
 				461350F1255564BF00D65488 /* Assets.xcassets */,
-				4613511B2555695900D65488 /* CircleImage.swift */,
-				461351242556EB0500D65488 /* MapView.swift */,
 				461350F6255564BF00D65488 /* Info.plist */,
 				461350F3255564BF00D65488 /* Preview Content */,
 			);
@@ -134,6 +132,16 @@
 				4613510C255564BF00D65488 /* Info.plist */,
 			);
 			path = FirstIOSAppUITests;
+			sourceTree = "<group>";
+		};
+		461351292556FD3200D65488 /* UIEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				461350EF255564BC00D65488 /* ContentView.swift */,
+				4613511B2555695900D65488 /* CircleImage.swift */,
+				461351242556EB0500D65488 /* MapView.swift */,
+			);
+			path = UIEssentials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
