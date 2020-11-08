@@ -9,29 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            MapView()
-            .frame(height: 400)
-            .edgesIgnoringSafeArea(.top)
-            
-            CircleImage()
-                .offset(y: -130)
-                .padding(.bottom, -130)
-            
-            VStack(alignment: .leading) {
-                Text("Sultan Ahmet Mosque")
-                    .font(.title)
-                HStack {
-                    Text("(The Blue Mosque)")
-                        .font(.subheadline)
-                    Spacer()
-                    Text("Istanbul")
-                        .font(.subheadline)
-                }
-            }
-            .padding()
-            Spacer()
-        }
+        LandmarkList()
     }
 }
 
