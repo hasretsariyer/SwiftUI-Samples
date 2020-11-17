@@ -9,10 +9,17 @@ import UIKit
 import SwiftUI
 import CoreLocation
 
+import Alamofire
+
 let landmarkData: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
+    
+    AF.request("https://swapi.dev/api/films")
+        .responseJSON { (data) in
+            print(data.value ?? "No value in response data");
+        }
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
         else {
