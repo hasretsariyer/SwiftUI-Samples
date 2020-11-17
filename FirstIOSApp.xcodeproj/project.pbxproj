@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		4613514C25570CB700D65488 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613514B25570CB700D65488 /* Data.swift */; };
 		4613515125583A3E00D65488 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4613515025583A3E00D65488 /* landmarkData.json */; };
 		461351652558510300D65488 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461351642558510300D65488 /* LandmarkList.swift */; };
+		469D7E0225591F3700199C91 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D7E0125591F3700199C91 /* UserData.swift */; };
+		46F4087225641A8F009D4F30 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 46F4087125641A8F009D4F30 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		4613514B25570CB700D65488 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4613515025583A3E00D65488 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		461351642558510300D65488 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		469D7E0125591F3700199C91 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F4087225641A8F009D4F30 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +170,7 @@
 				4613514625570A9000D65488 /* LandmarkRow.swift */,
 				4613514B25570CB700D65488 /* Data.swift */,
 				461351642558510300D65488 /* LandmarkList.swift */,
+				469D7E0125591F3700199C91 /* UserData.swift */,
 			);
 			path = ListAndNavigation;
 			sourceTree = "<group>";
@@ -186,6 +191,9 @@
 			dependencies = (
 			);
 			name = FirstIOSApp;
+			packageProductDependencies = (
+				46F4087125641A8F009D4F30 /* Alamofire */,
+			);
 			productName = FirstIOSApp;
 			productReference = 461350EA255564BC00D65488 /* FirstIOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 461350E1255564BC00D65488;
+			packageReferences = (
+				46F4087025641A8F009D4F30 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 461350EB255564BC00D65488 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,6 +319,7 @@
 				46135142255701FB00D65488 /* LandmarkDetail.swift in Sources */,
 				4613514725570A9000D65488 /* LandmarkRow.swift in Sources */,
 				4613513A2557009E00D65488 /* Landmark.swift in Sources */,
+				469D7E0225591F3700199C91 /* UserData.swift in Sources */,
 				4613514C25570CB700D65488 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +479,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstIOSApp/Preview Content\"";
+				DEVELOPMENT_TEAM = T9P2R7YH4K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FirstIOSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -488,6 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstIOSApp/Preview Content\"";
+				DEVELOPMENT_TEAM = T9P2R7YH4K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FirstIOSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -622,6 +636,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46F4087025641A8F009D4F30 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46F4087125641A8F009D4F30 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46F4087025641A8F009D4F30 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 461350E2255564BC00D65488 /* Project object */;
 }
