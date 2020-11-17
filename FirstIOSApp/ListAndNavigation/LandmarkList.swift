@@ -6,26 +6,29 @@
 //
 
 import SwiftUI
+import HorizonCalendar
 
 struct LandmarkList: View {
     @EnvironmentObject var userData: UserData
-    
     var body: some View {
-        NavigationView {
-            List {
-                Toggle(isOn: $userData.showFavoritesOnly) {
-                    Text("Favorites only")
-                }
-                
-                ForEach(landmarkData, id: \.id) { landmark in
-                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
-                        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                            LandmarkRow(landmark: landmark)
+        VStack{
+            HorizontalCalendar()
+            NavigationView {
+                List {
+                    Toggle(isOn: $userData.showFavoritesOnly) {
+                        Text("Favorites only")
+                    }
+                    
+                    ForEach(landmarkData, id: \.id) { landmark in
+                        if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                            NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                                LandmarkRow(landmark: landmark)
+                            }
                         }
                     }
                 }
+                .navigationBarTitle(Text("Landmarks"))
             }
-            .navigationBarTitle(Text("Landmarks"))
         }
     }
 }

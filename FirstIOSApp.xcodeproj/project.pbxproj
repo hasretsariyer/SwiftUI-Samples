@@ -24,6 +24,7 @@
 		469D7E0225591F3700199C91 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D7E0125591F3700199C91 /* UserData.swift */; };
 		46F4087225641A8F009D4F30 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 46F4087125641A8F009D4F30 /* Alamofire */; };
 		46F4087825642517009D4F30 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 46F4087725642517009D4F30 /* HorizonCalendar */; };
+		46F4087D2564281E009D4F30 /* HorizontalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F4087C2564281E009D4F30 /* HorizontalCalendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4613515025583A3E00D65488 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		461351642558510300D65488 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		469D7E0125591F3700199C91 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		46F4087C2564281E009D4F30 /* HorizontalCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		461350E1255564BC00D65488 = {
 			isa = PBXGroup;
 			children = (
+				46F4087C2564281E009D4F30 /* HorizontalCalendar.swift */,
 				461350EC255564BC00D65488 /* FirstIOSApp */,
 				461350FE255564BF00D65488 /* FirstIOSAppTests */,
 				46135109255564BF00D65488 /* FirstIOSAppUITests */,
@@ -321,6 +324,7 @@
 				4613511C2555695900D65488 /* CircleImage.swift in Sources */,
 				461351652558510300D65488 /* LandmarkList.swift in Sources */,
 				46135142255701FB00D65488 /* LandmarkDetail.swift in Sources */,
+				46F4087D2564281E009D4F30 /* HorizontalCalendar.swift in Sources */,
 				4613514725570A9000D65488 /* LandmarkRow.swift in Sources */,
 				4613513A2557009E00D65488 /* Landmark.swift in Sources */,
 				469D7E0225591F3700199C91 /* UserData.swift in Sources */,
