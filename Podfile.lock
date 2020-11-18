@@ -1,0 +1,16 @@
+PODS:
+  - HorizonCalendar (1.6.0)
+
+DEPENDENCIES:
+  - HorizonCalendar
+
+SPEC REPOS:
+  trunk:
+    - HorizonCalendar
+
+SPEC CHECKSUMS:
+  HorizonCalendar: 4353580edcd953506166d5f6b0f1c995baa75029
+
+PODFILE CHECKSUM: 388bbe52ed5a78f76145062407edf534d8059526
+
+COCOAPODS: 1.10.0
